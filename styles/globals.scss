@@ -28,6 +28,7 @@ a {
   z-index: -1;
   background-image: linear-gradient((hsla(0, 0, 0, .90), hsla(0, 0, 0, .90))) ,url("/assets/images/background.jpg");
   background-size: cover;
+  pointer-events: none; /* make the pseudo class click-through */
 }
 .overlay::before {
   content: "";
