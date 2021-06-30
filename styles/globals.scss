@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-size: cover;
   z-index: -1;
-  color: hsl(0, 0, 90);
+  color: hsl(0%, 0%, 90%);
 }
 
 a {
@@ -26,7 +26,7 @@ a {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: linear-gradient((hsla(0, 0, 0, .90), hsla(0, 0, 0, .90))) ,url("/assets/images/background.jpg");
+  background-image: linear-gradient((hsla(0%, 0%, 0%, .90), hsla(0%, 0%, 0%, .90))) ,url("/assets/images/background.jpg");
   background-size: cover;
   pointer-events: none; /* make the pseudo class click-through */
 }

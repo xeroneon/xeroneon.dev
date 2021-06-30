@@ -1,5 +1,6 @@
 import styles from './InfoPanel.module.scss';
 import Image from 'next/image';
+import IconButton from 'components/IconButton/IconButton';
 
 export default function InfoPanel() {
 
@@ -12,7 +13,12 @@ export default function InfoPanel() {
                     <p style={{fontSize: '18px', margin: '0'}}>Andrew Vasquez</p>
                 </div>
             </div>
-            <div className={styles.links}></div>
+            <div className={styles.links}>
+                <IconButton />
+                <IconButton />
+                <IconButton />
+                <IconButton />
+            </div>
         </div>
     );
 }
