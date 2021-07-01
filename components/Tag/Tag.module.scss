@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    // align-items: center;
+    background: hsl(0, 0, 36);
+    border-radius: 1000px;
+    width: fit-content;
+    height: 25px;
+    padding: 5px 10px;
+    margin-right: 10px;
+
+    p {
+        margin: 0;
+        margin-left: 5px !important;
+        font-size: 12px;
+    }
+}

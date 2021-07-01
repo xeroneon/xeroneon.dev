@@ -14,8 +14,8 @@ export default function InfoPanel() {
                 </div>
             </div>
             <div className={styles.links}>
-                <IconButton icon='github' iconType='fab' link=''/>
-                <IconButton icon='linkedin' iconType='fab'/>
+                <IconButton icon='github' iconType='fab' link='https://github.com/xeroneon'/>
+                <IconButton icon='linkedin' iconType='fab' link='https://www.linkedin.com/in/andrew-vasquez-659062126/'/>
             </div>
         </div>
     );

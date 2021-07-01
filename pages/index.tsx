@@ -1,10 +1,11 @@
 import styles from '../styles/Home.module.scss'
 import InfoPanel from '../components/InfoPanel/InfoPanel';
 import { useState } from 'react';
+import ProjectCard from 'components/ProjectCard/ProjectCard';
 
 const query = `
 {
-  projectCollection {
+  projectCollection(order: [sys_publishedAt_ASC]) {
     items {
       title
       image {
@@ -17,12 +18,15 @@ const query = `
 }
 `
 
-export default function Home(props) {
+export default function Home(props: any) {
   const [ projects, setProjects ] = useState(props.data.data.projectCollection.items);
   return (
     <>
       <InfoPanel />
       <div className='overlay'>&nbsp;</div>
+      <div className={styles.projectContainer}>
+        {projects.map((project: any) => <ProjectCard title={project.title} url={project.url} image={project.image.url} tags={project.tags}/>)}
+      </div>
     </>
   )
 }
