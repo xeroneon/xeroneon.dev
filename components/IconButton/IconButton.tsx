@@ -5,7 +5,7 @@ export default function IconButton(props: any) {
 
     return (
         <>
-        <a href={props.link} target='_blank'>
+        <a href={props.link} target='_blank' rel="noreferrer">
             <div className={styles.root}>
                 {props?.icon && <FontAwesomeIcon icon={[props.iconType, props.icon]} size='2x'/> }
             </div>

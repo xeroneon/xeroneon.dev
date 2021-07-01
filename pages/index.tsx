@@ -25,7 +25,7 @@ export default function Home(props: any) {
       <InfoPanel />
       <div className='overlay'>&nbsp;</div>
       <div className={styles.projectContainer}>
-        {projects.map((project: any) => <ProjectCard title={project.title} url={project.url} image={project.image.url} tags={project.tags}/>)}
+        {projects.map((project: any) => <ProjectCard title={project.title} url={project.url} image={project.image.url} tags={project.tags} key={project.title}/>)}
       </div>
     </>
   )
